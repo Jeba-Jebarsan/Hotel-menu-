@@ -1,0 +1,124 @@
+print("\t***********************")
+print("\t\033[33mWelcome to Joy Hotel\033[0m")
+print("\t***********************\n")
+print("\t\033[7mHotel menu\033[0m")
+print("\t__________\n")
+
+print("\t\033[37mFood names\t \t\tprice($)\033[0m")
+print("\t----------\t\t\t--------\n")
+print("\t\033[1m★. **Appetizers:**\033[0m")
+print("\t\t1.Bruschetta\t \t$49.00")
+print("\t\t2.Chicken Wings\t$56.00")
+print("\t\t3.Shrimp Cocktail\t$43.00\n")
+print("\t\033[1m★. **Main Courses:**\033[0m")
+print("\t\t4.Grilled Salmon\t$88.00")
+print("\t\t5.Beef Tenderloin\t$96.00")
+print("\t\t6.Vegetarian Pasta\t$85.00\n")
+
+print("\t\033[1m★. **Side Dishes:**\033[0m")
+print("\t\t7.Mashed Potatoes\t$43.00")
+print("\t\t8.Steamed Vegetables\t$46.00")
+print("\t\t9.Garlic Bread\t \t$30.00\n")
+
+print("\t\033[1m★. **Desserts:**\033[0m")
+print("\t\t10.Chocolate Fondue\t$18.00")
+print("\t\t11.Cheesecake\t  \t$23.00")
+print("\t\t12.Fruit Sorbet\t \t$16.00\n")
+#print("\t`````````````````")
+print("\t\t\033[37mDrinks\033[0m")
+print("\t\t\033[37m======\033[0m")
+print("\t\033[1m★. **Non-Alcoholic Beverages:**\033[0m")
+print("\t\t13.Fresh Fruit Juices\t$32.00")
+print("\t\t14.Iced Tea\t\t$12.00")
+print("\t\t15.Lemonade\t\t$8.00\n")
+
+print("\t\033[1m★. **Alcoholic Beverages:**\033[0m")
+print("\t\t16.Red Wine\t\t$134.00")
+print("\t\t17.White Wine\t\t$142.00")
+print("\t\t18.Cocktails \t\t$112.00\n")
+
+print("\t\033[1m★. **Hot Beverages:**\033[0m")
+print("\t\t19.Coffee\t\t$42.00")
+print("\t\t20.Herbal Tea\t\t$25.00")
+print("\t\t21.Hot Chocolate\t$58.00\n")
+
+
+
+
+total = 0  
+
+while True:
+    food = input("★ What would you like to eat? (Type \033[32m buy\033[0m if you want to buy): \n")
+
+    if food == "buy":
+        break
+
+    if food == "1":
+        print("Bruschetta - $49.00")
+        total += 49
+    elif food == "2":
+        print("Chicken Wings - $56.00")
+        total += 56
+    elif food == "3":
+        print("Shrimp Cocktail - $43.00")
+        total += 43
+    elif food == "4":
+        print("Grilled Salmon - $88.00")
+        total += 88
+    elif food == "5":
+        print("Beef Tenderloin - $96.00")
+        total += 96
+    elif food == "6":
+        print("Vegetarian Pasta - $85.00")
+        total += 85
+    elif food == "7":
+        print("Mashed Potatoes - $43.00")
+        total += 43
+    elif food == "8":
+        print("Steamed Vegetables - $46.00")
+        total += 46
+    elif food == "9":
+        print("Garlic Bread - $30.00")
+        total += 30
+    elif food == "10":
+        print("Chocolate Fondue - $18.00")
+        total += 18
+    elif food == "11":
+        print("Cheesecake - $23.00")
+        total += 23
+    elif food == "12":
+        print("Fruit Sorbet - $16.00")
+        total += 16
+    elif food == "13":
+        print("Fresh Fruit Juices - $32.00")
+        total += 32
+    elif food == "14":
+        print("Iced Tea - $12.00")
+        total += 12
+    elif food == "15":
+        print("Lemonade - $8.00")
+        total += 8
+    elif food == "16":
+        print("Red Wine - $134.00")
+        total += 134
+    elif food == "17":
+        print("White Wine - $142.00")
+        total += 142
+    elif food == "18":
+        print("Cocktails - $112.00")
+        total += 112
+    elif food == "19":
+        print("Coffee - $42.00")
+        total += 42
+    elif food == "20":
+        print("Herbal Tea - $25.00")
+        total += 25
+    elif food == "21":
+        print("Hot Chocolate - $58.00")
+        total += 58
+    else:
+     	print("Invalid choice, please try again.")
+     	
+
+     		
+print(f"Thank you! Your total is: ${total}"
